@@ -101,16 +101,6 @@ header {
     z-index: 999;
 }
 
-.logo {
-    font-size: 32px;
-    font-weight: 800;
-    color: #e67e22;
-}
-
-.logo span {
-    color: #2d3436;
-}
-
 nav a {
     text-decoration: none;
     margin-left: 35px;
