@@ -7,7 +7,9 @@ let name=document.getElementById("name").value;
 let phone=document.getElementById("phone").value;
 let food=document.getElementById("food").value;
 let time=document.getElementById("time").value;
+let address=document.getElementById("address").value;
 let comments=document.getElementById("comments").value;
+
 
 let message=
 `*NEW FOOD ORDER*%0A%0A`+
@@ -15,6 +17,7 @@ let message=
 `📱 *WhatsApp Number:* ${phone}%0A`+
 `🍛 *Food Ordered:* ${food}%0A`+
 `⏰ *Delivery Time:* ${time}%0A`+
+` *Delivery Address:* ${address}%0A`+
 `📝 *Comments:* ${comments}`;
 
 let whatsappNumber="2348137846411";
