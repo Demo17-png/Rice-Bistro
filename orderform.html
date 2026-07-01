@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Bistro</title>
+     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./Images/ricelogo.png">
+</head>
+<body>
+    <div class="container">
+
+<h1>🍛 Food Order Form</h1>
+
+<form id="orderForm">
+
+<label>Full Name</label>
+<input type="text" id="name" required>
+
+<label>WhatsApp Number</label>
+<input type="tel" id="phone" required>
+
+<label>Select Food</label>
+<select id="food" required>
+
+<option value="">Choose Food</option>
+
+<option>White rice, stew, chicken</option>
+<option>White rice, stew, meat</option>
+<option>White rice, stew, fish</option>
+
+<option>Jollof rice, chicken</option>
+<option>Jollof rice, meat</option>
+<option>Jollof rice, fish</option>
+
+<option>Fried rice, chicken</option>
+<option>Fried rice, meat</option>
+<option>Fried rice, fish</option>
+
+<option>Fried rice and Jollof rice, chicken</option>
+<option>Fried rice and Jollof rice, meat</option>
+<option>Fried rice and Jollof rice, fish</option>
+
+</select>
+
+<label>Preferred Delivery Time</label>
+
+<select id="time" required>
+
+<option value="">Select Time</option>
+<option>10:00 AM</option>
+<option>12:00 PM</option>
+<option>2:00 PM</option>
+<option>4:00 PM</option>
+<option>6:00 PM</option>
+<option>8:00 PM</option>
+
+</select>
+
+<label>Additional Comments</label>
+
+<textarea id="comments" rows="4" placeholder="Any special requests?"></textarea>
+
+<button type="submit">
+Place Order on WhatsApp
+</button>
+
+</form>
+
+<div class="footer">
+Thank you for ordering with us.
+</div>
+
+</div>
+
+<script src="./main.js"></script>
+</body>
+</html>
