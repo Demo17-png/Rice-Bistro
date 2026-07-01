@@ -6,6 +6,7 @@ e.preventDefault();
 let name=document.getElementById("name").value;
 let phone=document.getElementById("phone").value;
 let food=document.getElementById("food").value;
+let date=document.getElementById("datee").value;
 let time=document.getElementById("time").value;
 let address=document.getElementById("address").value;
 let comments=document.getElementById("comments").value;
@@ -16,6 +17,7 @@ let message=
 `👤 *Full Name:* ${name}%0A`+
 `📱 *WhatsApp Number:* ${phone}%0A`+
 `🍛 *Food Ordered:* ${food}%0A`+
+`⏰ *Delivery Date:* ${date}%0A`+
 `⏰ *Delivery Time:* ${time}%0A`+
 ` *Delivery Address:* ${address}%0A`+
 `📝 *Comments:* ${comments}`;
