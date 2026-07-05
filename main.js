@@ -19,7 +19,7 @@ let message=
 `🍛 *Food Ordered:* ${food}%0A`+
 `⏰ *Delivery Date:* ${date}%0A`+
 `⏰ *Delivery Time:* ${time}%0A`+
-` *Delivery Address:* ${address}%0A`+
+`*Delivery Address:* ${address}%0A`+
 `📝 *Comments:* ${comments}`;
 
 let whatsappNumber="2348137846411";
