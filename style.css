@@ -77,7 +77,7 @@ button:hover {
     background: #128C7E;
 }
 
-.footer {
+footer {
     text-align: center;
     margin-top: 15px;
     color: #666;
@@ -286,8 +286,12 @@ section {
 footer {
     background: #222;
     color: white;
-    padding: 40px;
+    padding: 80px 8%;
     text-align: center;
+}
+footer h3 {
+    font-size: 45px;
+    margin-bottom: 20px;
 }
 
 .socials a {
