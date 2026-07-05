@@ -6,7 +6,7 @@ e.preventDefault();
 let name=document.getElementById("name").value;
 let phone=document.getElementById("phone").value;
 let food=document.getElementById("food").value;
-let date=document.getElementById("datee").value;
+let date=document.getElementById("date").value;
 let time=document.getElementById("time").value;
 let address=document.getElementById("address").value;
 let comments=document.getElementById("comments").value;
