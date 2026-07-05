@@ -83,5 +83,37 @@ Thank you for ordering with us.
 </div>
 
 <script src="./main.js"></script>
+<script>
+window.onload = function(){
+
+    let food = localStorage.getItem("selectedFood");
+    let price = localStorage.getItem("selectedPrice");
+
+    if(food){
+
+        let select = document.getElementById("food");
+
+        let exists = false;
+
+        for(let option of select.options){
+            if(option.text === food){
+                option.selected = true;
+                exists = true;
+                break;
+            }
+        }
+
+        if(!exists){
+            let option = document.createElement("option");
+            option.text = food;
+            option.value = food;
+            option.selected = true;
+            select.add(option);
+        }
+
+    }
+
+};
+</script>
 </body>
 </html>

@@ -42,7 +42,11 @@
 
 <div class="price">₦4,500</div>
 
-<a href="./orderform.html" class="order-btn" target="_blank">Order</a>
+<a href="./orderform.html"
+   class="order-btn"
+   onclick="selectMeal('White Rice & Chicken','₦4,500')">
+   Order
+</a>
 
 </div>
 
@@ -60,7 +64,11 @@
 
 <div class="price">₦4,800</div>
 
-<a href="./orderform.html" class="order-btn" target="_blank">Order</a>
+<a href="./orderform.html"
+   class="order-btn"
+   onclick="selectMeal('Jollof Rice & Beef','₦4,800')">
+   Order
+</a>
 
 </div>
 
@@ -78,7 +86,11 @@
 
 <div class="price">₦5,000</div>
 
-<a href="./orderform.html" class="order-btn" target="_blank">Order</a>
+<a href="./orderform.html"
+   class="order-btn"
+   onclick="selectMeal('Fried Rice & Fish','₦5,000')">
+   Order
+</a>
 
 </div>
 
@@ -212,6 +224,11 @@
 
 </footer>
 
-
+<script>
+function selectMeal(food, price){
+    localStorage.setItem("selectedFood", food);
+    localStorage.setItem("selectedPrice", price);
+}
+</script>
 </body>
 </html>
