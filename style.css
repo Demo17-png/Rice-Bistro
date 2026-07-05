@@ -271,6 +271,21 @@ section {
 }
 
 /* Call to Action & Footer */
+.others {
+    background: #222;
+    padding: 80px 8%;
+    text-align: center;
+    color: white;
+}
+
+.others h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.others a {
+    background: linear-gradient(135deg,#ff9800,#ff6f00);
+}
+
 .cta {
     background: linear-gradient(135deg,#ff9800,#ff6f00);
     padding: 80px 8%;
