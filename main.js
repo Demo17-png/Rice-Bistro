@@ -1,33 +1,47 @@
+document.getElementById("orderForm").addEventListener("submit", function(e) {
 
-document.getElementById("orderForm").addEventListener("submit", function(e){
+    e.preventDefault();
 
-e.preventDefault();
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
 
-let name=document.getElementById("name").value;
-let phone=document.getElementById("phone").value;
-let food=document.getElementById("food").value;
-let date=document.getElementById("date").value;
-let time=document.getElementById("time").value;
-let address=document.getElementById("address").value;
-let comments=document.getElementById("comments").value;
+    const foodSelect = document.getElementById("food");
+    const food = foodSelect.value;
 
+    const price = foodSelect.options[foodSelect.selectedIndex].dataset.price;
 
-let message=
-`*NEW FOOD ORDER*%0A%0A`+
-`👤 *Full Name:* ${name}%0A`+
-`📱 *WhatsApp Number:* ${phone}%0A`+
-`🍛 *Food Ordered:* ${food}%0A`+
-`⏰ *Delivery Date:* ${date}%0A`+
-`⏰ *Delivery Time:* ${time}%0A`+
-`*Delivery Address:* ${address}%0A`+
-`📝 *Comments:* ${comments}`;
+    const date = document.getElementById("date").value;
+    const time = document.getElementById("time").value;
+    const address = document.getElementById("address").value;
+    const comments = document.getElementById("comments").value;
 
-let whatsappNumber="2348137846411";
+    const businessNumber = "2348137846411"; // Replace with your WhatsApp number
 
-// Replace with your own WhatsApp number
+    const message =
+`*🍛 NEW FOOD ORDER*
 
-let url=`https://wa.me/${whatsappNumber}?text=${message}`;
+*Customer:* ${name}
 
-window.open(url,"_blank");
+*Customer WhatsApp:* ${phone}
+
+*Food Ordered:*
+${food}
+
+*Price:* ₦${Number(price).toLocaleString()}
+
+*Delivery Date:* ${date}
+
+*Delivery Time:* ${time}
+
+*Delivery Address:*
+${address}
+
+*Additional Comments:*
+${comments}`;
+
+    const whatsappURL =
+`https://wa.me/${businessNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappURL, "_blank");
 
 });
