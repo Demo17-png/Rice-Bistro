@@ -19,7 +19,7 @@ let message=
 `📱 *WhatsApp Number:* ${phone}%0A`+
 `🍛 *Food Ordered:* ${food}%0A`+
 `💰 *Price:* ${price}%0A`+
-`⏰ *Delivery Date:* ${date}%0A`+
+` *Delivery Date:* ${date}%0A`+
 `⏰ *Delivery Time:* ${time}%0A`+
 ` *Delivery Address:* ${address}%0A`+
 `📝 *Comments:* ${comments}`;
