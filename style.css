@@ -282,6 +282,9 @@ section {
     font-size: 45px;
     margin-bottom: 20px;
 }
+.cta a {
+    background: #222;
+}
 
 footer {
     background: #222;
